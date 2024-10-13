@@ -6,8 +6,8 @@ class Employee:
         self.title = title
         self.phone_number = phone_number
 
-def email_signature(self, include_phone=False):
-    signature = f"{self.name} - {self.title}\n{self.email_address}"
-    if include_phone and self.phone_number:
-        signature += f" ({self.phone_number})"
-        return signature
+    def email_signature(self, include_phone=False):
+        signature = f"{self.name} - {self.title}\n{self.email_address}"
+        if include_phone and self.phone_number:
+            signature += f" ({self.phone_number})"
+            return signature
