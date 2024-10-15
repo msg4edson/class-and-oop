@@ -1,4 +1,3 @@
- 
 class Employee:
     def __init__(self, name, email_address, title, phone_number=None):
         self.name = name
@@ -10,4 +9,4 @@ class Employee:
         signature = f"{self.name} - {self.title}\n{self.email_address}"
         if include_phone and self.phone_number:
             signature += f" ({self.phone_number})"
-            return signature
+        return signature
